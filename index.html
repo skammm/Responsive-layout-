@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>前锋科技</title>
+  <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+  <link rel="stylesheet" href="libs/glide/glide.core.min.css">
+  <link rel="stylesheet" href="libs/glide/glide.theme.min.css">
+  <link rel="stylesheet" href="libs/font/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+(function(){
+    function w() {
+    var r = document.documentElement;
+    var a = r.getBoundingClientRect().width;//获取当前设备的宽度
+        if (a > 720 ){//720不固定，根据设计稿的宽度定
+            a = 720;
+        } 
+        rem = a / 72;
+        r.style.fontSize = rem + "px"
+    }
+    w();
+    window.addEventListener("resize", function() {//监听横竖屏切换
+        w()
+    }, false);
+})();
+</script>
+<body>
+  <header>
+    <div class="logo">峰华科技</div>
+    <nav>
+      <a href="#home">首页</a>
+      <a href="#about_us">关于我们</a>
+      <a href="#success_case">成功案例</a>
+      <a href="#server_flow">服务流程</a>
+      <a href="#team_intros">团队介绍</a>
+      <a href="#component_intro">公司介绍</a>
+      <i class="icon-search"></i>
+    </nav>
+    <div class="burger">
+      <div class="burger_line"></div>
+      <div class="burger_line middle"></div>
+      <div class="burger_line"></div>
+    </div>
+    
+  </header>
+  <div id="home" class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <div class="glide__slides">
+        <li class="glide__slide">
+          <div class="slide-caption">
+            <h1>用创新点缀人生，让科技融入理想。</h1>
+            <h3>
+              科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式发展。用创新点缀人生，让科技融入理想
+            </h3>
+            <button>探索更多</button>
+           
+          </div>
+          <div class="dark"></div>
+          <img src="images/people-in-couch-1024248.jpg" alt="办公图">
+        </li>
+        <li class="glide__slide">
+          <div class="slide-caption">
+            <h1>科技改变世界</h1>
+            <h3>               
+            立足科学发展，着力自主创新。加速科技进步，为全市经济社会发展提供有力支持。凝聚科技创意，成就创新梦想。
+            </h3>
+            <button>探索更多</button>
+           
+          </div>
+          <div class="dark"></div>
+          <video src="videos/working-man.mp4" muted autoplay loop></video>
+        </li>
+      </div>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">CS</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">CK</button>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0"></button>
+      <button class="glide__bullet" data-glide-dir="=1"></button>
+    </div>
+  </div>
+  <div class="content">
+    <section id="about_us" class="about_us">
+      <h1>关于我们</h1>
+      <h3>网络公司不仅仅提供域名注册，空间租用，网站开发，网站建设与网络营销活动策划相关的企业组织。</h3>
+      <div class="about_us_item">
+        <div class="item">
+          <i class="icon-lightbulb"></i>
+          <h5>品牌创意</h5>
+          <p>为企业设计独特的并能完美呈现企业价值观的视觉。</p>
+        </div>
+        <div class="item">
+          <i class="icon-desktop"></i>
+          <h5>品牌创意</h5>
+          <p>为企业设计独特的并能完美呈现企业价值观的视觉。</p>
+        </div>
+        <div class="item">
+          <i class="icon-desktop"></i>
+          <h5>品牌创意</h5>
+          <p>为企业设计独特的并能完美呈现企业价值观的视觉。</p>
+        </div>
+        <div class="item">
+          <i class="icon-desktop"></i>
+          <h5>品牌创意</h5>
+          <p>为企业设计独特的并能完美呈现企业价值观的视觉。</p>
+        </div>
+        <div class="item">
+          <i class="icon-desktop"></i>
+          <h5>品牌创意</h5>
+          <p>为企业设计独特的并能完美呈现企业价值观的视觉。</p>
+        </div>
+        <div class="item">
+          <i class="icon-desktop"></i>
+          <h5>品牌创意</h5>
+          <p>为企业设计独特的并能完美呈现企业价值观的视觉。</p>
+        </div>
+      </div>
+      
+    </section>
+    <section id="success_case" class="success_case">
+      <h1>成功案例</h1>
+      <div class="isotope_btn">
+        <button class="active" data-filter="*">全部</button>
+        <button data-filter=".web">web</button>
+        <button data-filter=".mobile">移动</button>
+        <button data-filter=".science">科研</button>
+      </div>
+      <div class="grides">
+        <div class="grid_item web">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="grid_item web science">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="grid_item mobile">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="grid_item science">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="grid_item mobile science">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="grid_item web">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="grid_item web">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="grid_item web">
+          <img  src="images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        
+        
+      </div>
+    </section>
+    <section id="server_flow" class="server_flow"> 
+      <h1>服务流程</h1>
+      <h3>网络综合公司，提供包括网络基础服务（比如域名，主机，邮箱）和网络增值服务（如网站建设和推广，网站优化）等业务
+      </h3>
+      <div class="servers">
+        <div class="server_item">
+          <i class="icon-signal"></i>
+          <h2>需求沟通</h2>
+          <p>客户提出网站建设基本需求，包括设计要求及功能要求。</p>
+        </div>
+        <div class="server_item">
+          <i class="icon-signal"></i>
+          <h2>需求沟通</h2>
+          <p>客户提出网站建设基本需求，包括设计要求及功能要求。</p>
+        </div>
+        <div class="server_item">
+          <i class="icon-signal"></i>
+          <h2>需求沟通</h2>
+          <p>客户提出网站建设基本需求，包括设计要求及功能要求。</p>
+        </div>
+        <div class="server_item">
+          <i class="icon-signal"></i>
+          <h2>需求沟通</h2>
+          <p>客户提出网站建设基本需求，包括设计要求及功能要求。</p>
+        </div>
+        <div class="server_item">
+          <i class="icon-signal"></i>
+          <h2>需求沟通</h2>
+          <p>客户提出网站建设基本需求，包括设计要求及功能要求。</p>
+        </div>
+        <div class="server_item">
+          <i class="icon-signal"></i>
+          <h2>需求沟通</h2>
+          <p>客户提出网站建设基本需求，包括设计要求及功能要求。</p>
+        </div>
+      </div>
+    </section>
+    <section id="team_intros" class="team_intros"> 
+      <h1>团队介绍</h1>
+      <div class="cards">
+        <div class="card">
+          <div class="profile_image">
+            <img  src="images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="">
+          </div>
+          <p class="name">张三</p>
+          <p class="job">前端工程师</p>
+          <div class="social">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="profile_image">
+            <img src="images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="">
+          </div>
+          <p class="name">张三</p>
+          <p class="job">前端工程师</p>
+          <div class="social">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="profile_image">
+            <img src="images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="">
+          </div>
+          <p class="name">张三</p>
+          <p class="job">前端工程师</p>
+          <div class="social">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="profile_image">
+            <img src="images/smiling-woman-wearing-black-sweater-1587009.jpg" alt="">
+          </div>
+          <p class="name">张三</p>
+          <p class="job">前端工程师</p>
+          <div class="social">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="numbers" class="numbers">
+      <div class="dark"></div>
+      <div class="number">
+        <i class="icon-trophy"></i>
+        <p class="num">156</p>
+        <p>行代码</p>
+      </div>
+      <div class="number">
+        <i class="icon-trophy"></i>
+        <p class="num">156</p>
+        <p>行代码</p>
+      </div>
+      <div class="number">
+        <i class="icon-trophy"></i>
+        <p class="num">156</p>
+        <p>行代码</p>
+      </div>
+      <div class="number">
+        <i class="icon-trophy"></i>
+        <p class="num">156</p>
+        <p>行代码</p>
+      </div>
+    </section>
+    <section id="component_intro" class="component_intro">
+      <h1>公司简介</h1>
+      <h3>关注公司动态，获取一手信息</h3>
+      <div class="components">
+        <div class="component">
+          <div class="comp_img">
+            <img src="images/watercrafts-on-river-3464632.jpg" alt="">
+          </div>
+          <div class="comp_detail">
+            <i class="icon-calendar"> 2020年4月8日</i>
+            <i class="icon-calendar">33条评论</i>
+            <h4>提供互联网接入的ISP公司</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio eligendi doloremque excepturi necessitatibus id quaerat porro nisi reprehenderit consequatur?</p>
+            <button>阅读更多</button>
+          </div>
+        </div>
+        <div class="component">
+          <div class="comp_img">
+            <img src="images/watercrafts-on-river-3464632.jpg" alt="">
+          </div>
+          <div class="comp_detail">
+            <i class="icon-calendar"> 2020年4月8日</i>
+            <i class="icon-calendar">33条评论</i>
+            <h4>提供互联网接入的ISP公司</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio eligendi doloremque excepturi necessitatibus id quaerat porro nisi reprehenderit consequatur?</p>
+            <button>阅读更多</button>
+          </div>
+        </div>
+        <div class="component">
+          <div class="comp_img">
+            <img src="images/watercrafts-on-river-3464632.jpg" alt="">
+          </div>
+          <div class="comp_detail">
+            <i class="icon-calendar"> 2020年4月8日</i>
+            <i class="icon-calendar">33条评论</i>
+            <h4>提供互联网接入的ISP公司</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio eligendi doloremque excepturi necessitatibus id quaerat porro nisi reprehenderit consequatur?</p>
+            <button>阅读更多</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="backtop">
+    <a href="#home"><i class="icon-angle-up"></i></a>
+  </div>
+  
+  <script src="libs/isotope/isotope.pkgd.min.js"></script>
+  <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+  <script src="libs/anime/anime.min.js"></script>
+  <script src="libs/glide/glide.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
